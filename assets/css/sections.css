@@ -933,3 +933,60 @@ body {
     margin: 1.5rem 0 1rem;
   }
 }
+
+/* =========================
+   QR EVENTO
+========================= */
+
+.qr-text {
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+
+/* CONTENEDOR */
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 20px;
+
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.1);
+}
+
+/* IMAGEN QR */
+.qr-image {
+  width: 180px;
+  border-radius: 18px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.12),
+    inset 0 1px 0 rgba(255,255,255,0.6);
+
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* HOVER elegante */
+.qr-image:hover {
+  transform: scale(1.05);
+  box-shadow:
+    0 28px 60px rgba(0,0,0,0.18);
+}
+
+@media (max-width: 768px) {
+
+  .qr-image {
+    width: 150px;
+  }
+
+  .qr-text {
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+}
