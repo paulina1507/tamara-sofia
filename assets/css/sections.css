@@ -935,9 +935,24 @@ body {
 }
 
 /* =========================
-   QR EVENTO
+   QR EVENTO – FULL CARD
 ========================= */
 
+/* CARD GRANDE (la sección completa) */
+.qr-full {
+  background: #ffffff;
+  padding: 3.2rem 2rem;
+  border-radius: 26px;
+
+  box-shadow:
+    0 30px 70px rgba(0,0,0,0.10),
+    inset 0 1px 0 rgba(255,255,255,0.7);
+
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* TEXTO */
 .qr-text {
   font-family: var(--font-base);
   font-size: 0.95rem;
@@ -947,41 +962,45 @@ body {
   line-height: 1.7;
 }
 
-/* CONTENEDOR */
+/* CONTENEDOR (YA SIN CARD) */
 .qr-wrapper {
   display: flex;
   justify-content: center;
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 20px;
-
-  box-shadow:
-    0 30px 60px rgba(0,0,0,0.1);
+  margin-top: 2rem;
 }
 
 /* IMAGEN QR */
 .qr-image {
-  width: 180px;
+  width: 250px;
   border-radius: 18px;
 
-  box-shadow:
-    0 20px 50px rgba(0,0,0,0.12),
-    inset 0 1px 0 rgba(255,255,255,0.6);
+  background: #ffffff;
+  padding: 12px;
 
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.15);
+
+  transition: transform 0.4s ease;
 }
 
-/* HOVER elegante */
+/* HOVER */
 .qr-image:hover {
   transform: scale(1.05);
-  box-shadow:
-    0 28px 60px rgba(0,0,0,0.18);
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 768px) {
 
+  .qr-full {
+    padding: 2.4rem 1.2rem;
+    border-radius: 20px;
+  }
+
   .qr-image {
-    width: 150px;
+    width: 180px;
   }
 
   .qr-text {
