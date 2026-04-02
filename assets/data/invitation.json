@@ -8,22 +8,22 @@
   "nav": {
     "left": [
       {
-        "label": "Inicio",
-        "href": "#hero"
-      },
-      {
         "label": "Presentación",
         "href": "#presentation"
       },
       {
         "label": "Ceremonia",
         "href": "#location"
+      },
+      {
+        "label": "Programa",
+        "href": "#timeline"
       }
     ],
     "right": [
       {
-        "label": "Programa",
-        "href": "#timeline"
+        "label": "Vestimenta",
+        "href": "#dresscode"
       },
       {
         "label": "Regalos",
