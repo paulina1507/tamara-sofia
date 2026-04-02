@@ -65,7 +65,7 @@
         "note": "Padrinos de Bautizo"
       }
     ],
-    "text": "Llenos de fe y amor, presentamos ante Dios a nuestro hija para recibir el Sacramento del Bautismo y te invitamos a acompañarnos en este momento tan especial.",
+    "text": "Llenos de fe y amor, presentamos ante Dios a nuestra hija para recibir el Sacramento del Bautismo. Nos encantaría que nos acompañes en este momento tan especial.",
     "icon": "assets/img/cruz.svg"
   },
   "gratitude": {
@@ -82,7 +82,7 @@
         "time": "12:00 PM",
         "image": "assets/img/ceremonia.png",
         "place": "Parroquia de Cristo Rey",
-        "address": "Av. del Trabajo No. 1, San Andres Atenco, 54040 Tlalnepantla",
+        "address": "Av. del Trabajo No. 1, San Andres Atenco, 54040 Tlalnepantla, Méx.",
         "map": "https://maps.app.goo.gl/ctEX7fi18wzQDmddA"
       },
       {
@@ -90,8 +90,8 @@
         "time": "02:00 PM",
         "image": "assets/img/recepcion.png",
         "place": "Salón de Eventos Grupo Vázquez",
-        "address": "Av. del Trabajo No. 1, San Andres Atenco, 54040 Tlalnepantla",
-        "map": "https://maps.app.goo.gl/ctEX7fi18wzQDmddA"
+        "address": "Av de Los Maestros 83, Col. Leandro Valle, 54040 Tlalnepantla, Méx.",
+        "map": "https://maps.app.goo.gl/AvxuqWaTZZ6N3sWi6"
       }
     ]
   },
@@ -105,7 +105,7 @@
       },
       {
         "time": "01:00 PM",
-        "text": "Fotografías",
+        "text": "Bendiciones y Fotografías",
         "icon": "assets/img/4.svg"
       },
       {
