@@ -1,0 +1,74 @@
+:root {
+  /* =========================
+     BRAND / IDENTIDAD
+     ========================= */
+
+  --color-primary: #d88fa3; /* 🌸 rosa principal */
+  --color-accent: #f3c9d6; /* 💗 rosa claro elegante */
+  --color-envelope: #f2b6c6; /* 💌 sobre rosita */
+  --color-gold: #c9a646;
+  --color-gold-soft: #e7d6a3;
+  --color-gold-light: #f5ecd3;
+  /* =========================
+     BACKGROUNDS
+     ========================= */
+
+  --bg-main: #ffffff;
+  --bg-section: #fdf3f6; /* fondo rosita suave */
+  --bg-overlay: rgba(0, 0, 0, 0.35);
+
+  /* =========================
+     TEXTOS
+     ========================= */
+
+  --text-primary: #2e2e2e;
+  --text-secondary: #6f6f6f;
+  --text-muted: #9b9b9b;
+  --text-inverse: #ffffff;
+
+  /* =========================
+     LÍNEAS & SOMBRAS
+     ========================= */
+  --line-soft: #f4d9e1; /* líneas rositas */
+  --shadow-soft: 0 18px 38px rgba(0, 0, 0, 0.12);
+  --shadow-light: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  /* =========================
+     TIPOGRAFÍAS
+     ========================= */
+  --font-script: "Great Vibes", cursive;
+  --font-title: "Playfair Display", serif;
+  --font-base: "Poppins", sans-serif;
+
+  /* =========================
+     ESCALA TIPOGRÁFICA
+     ========================= */
+  --fs-hero: 3.5rem;
+  --fs-h1: 3rem;
+  --fs-h2: 2.2rem;
+  --fs-h3: 1.6rem;
+  --fs-body: 1rem;
+  --fs-small: 0.85rem;
+
+  /* =========================
+     ESPACIADOS
+     ========================= */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+
+  /* =========================
+     TRANSICIONES
+     ========================= */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.6s ease;
+
+  /* =========================
+     BORDER RADIUS
+     ========================= */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+}

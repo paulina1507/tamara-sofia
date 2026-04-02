@@ -1,0 +1,513 @@
+/* =====================================================
+   RSVP
+   ===================================================== */
+
+.rsvp-content{
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TEXTO INTRO */
+.rsvp-intro{
+  font-family: var(--font-base);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 2.2rem;
+}
+
+/* ===============================
+   FORMULARIO
+================================ */
+
+.rsvp-form{
+  display: grid;
+  gap: 1.2rem;
+  margin-bottom: 1.8rem;
+}
+
+.rsvp-form input,
+.rsvp-form select,
+.rsvp-form textarea{
+  width: 100%;
+  padding: .85rem .9rem;
+  font-family: var(--font-base);
+  font-size: 0.85rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(0,0,0,0.15);
+  background-color: #ffffff;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.rsvp-form input:focus,
+.rsvp-form select:focus,
+.rsvp-form textarea:focus{
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(126, 102, 170, 0.15);
+}
+
+.rsvp-form textarea{
+  resize: none;
+  min-height: 90px;
+}
+
+.rsvp-form button{
+  width: 100%;
+}
+
+/* ===============================
+   TICKET DIGITAL
+================================ */
+
+.rsvp-extra{
+  margin-top: 2rem;
+  padding: 34px 28px;
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #fbf9ff
+  );
+  border-radius: 26px;
+
+  display: grid;
+  gap: 26px;
+
+  max-width: 440px;
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 60px rgba(120, 90, 160, 0.18),
+    inset 0 1px 0 rgba(255,255,255,0.8);
+
+  animation: rsvpFadeUp .5s ease;
+}
+
+
+/* DECORACIÓN SUPERIOR */
+.rsvp-ticket::after{
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 46px;
+  height: 3px;
+  border-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #7a5ecb,
+    transparent
+  );
+  opacity: 0.6;
+}
+
+/* ESTADO OCULTO */
+.rsvp-extra.hidden{
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  height: 0;
+  overflow: hidden;
+  padding: 0;
+  box-shadow: none;
+}
+
+.rsvp-extra::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 40%,
+    rgba(255,255,255,0.6),
+    transparent 60%
+  );
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* ===============================
+   HEADER DEL TICKET
+================================ */
+
+.ticket-header{
+  text-align: center;
+  position: relative;
+}
+
+.ticket-title{
+  font-size: 0.6rem;
+  letter-spacing: .32em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.75);
+}
+
+.ticket-name{
+  margin-top: 14px;
+  font-family: var(--font-title);
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+
+/* ===============================
+   CUERPO DEL TICKET
+================================ */
+
+.ticket-body{
+  background: linear-gradient(
+    180deg,
+    rgba(123,94,203,0.05),
+    rgba(123,94,203,0.02)
+  );
+  border-radius: 18px;
+  padding: 22px 24px;
+  display: grid;
+  gap: 18px;
+
+  box-shadow: inset 0 0 0 1px rgba(123,94,203,0.12);
+}
+
+
+/* LINEAS DE INFO */
+.rsvp-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rsvp-info strong{
+  font-size: 0.7rem;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: #9c8fd0;
+}
+
+.rsvp-info span{
+  background: linear-gradient(
+    135deg,
+    #7a5ecb,
+    #9a84df
+  );
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  box-shadow: 0 6px 18px rgba(122,94,203,0.35);
+}
+
+
+/* ICONOS */
+.rsvp-info:first-child strong::before{
+  content: "🎟️ ";
+}
+
+.rsvp-info:last-child strong::before{
+  content: "🪑 ";
+}
+
+/* ===============================
+   QR
+================================ */
+.ticket-qr{
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.ticket-qr canvas{
+  width: 150px;
+  height: 150px;
+  padding: 14px;
+  background: #fff;
+  border-radius: 24px;
+
+  box-shadow:
+    0 20px 40px rgba(120,90,160,0.25),
+    inset 0 0 0 1px rgba(123,94,203,0.15);
+}
+
+.qr-label{
+  font-size: 0.65rem;
+  letter-spacing: .08em;
+  color: #a79ad8;
+}
+
+
+/* ===============================
+   NOTA
+================================ */
+
+.rsvp-note{
+  font-family: var(--font-base);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-top: 1.4rem;
+}
+
+/* ===============================
+   MENSAJE DE ÉXITO
+================================ */
+
+.rsvp-success {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  color: var(--color-primary);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: all 0.4s ease;
+}
+
+.rsvp-success:not(.hidden) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ===============================
+   ANIMACIONES
+================================ */
+
+@keyframes rsvpFadeUp{
+  from{
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===============================
+   MÓVIL
+================================ */
+
+@media (max-width: 480px){
+  .rsvp-content{
+    max-width: 100%;
+  }
+
+  .rsvp-extra{
+    padding: 22px;
+  }
+
+  .ticket-name{
+    font-size: 1.25rem;
+  }
+
+  .ticket-qr canvas{
+    width: 115px;
+    height: 115px;
+  }
+}
+
+/* =====================================================
+   RSVP EN SECCIÓN AZUL
+===================================================== */
+
+.section--accent .rsvp-content{
+  color: #ffffff;
+}
+
+/* INTRO */
+.section--accent .rsvp-intro{
+  color: rgba(255,255,255,0.85);
+}
+
+/* LABELS */
+.section--accent .rsvp-field label,
+.section--accent .rsvp-helper{
+  color: rgba(255,255,255,0.75);
+}
+
+.section--accent .rsvp-form input,
+.section--accent .rsvp-form select,
+.section--accent .rsvp-form textarea{
+  background-color: #ffffff;
+  color: #2b255f;
+  border: 1px solid rgba(255,255,255,0.6);
+}
+
+.section--accent .rsvp-form input::placeholder,
+.section--accent .rsvp-form textarea::placeholder{
+  color: #8b86b5;
+}
+
+.section--accent .rsvp-form button{
+  background-color: #ffffff;
+  color: #2b255f;
+  font-weight: 600;
+}
+
+.section--accent .rsvp-form button:hover{
+  background-color: #ece9ff;
+}
+
+.section--accent .rsvp-extra{
+  box-shadow:
+    0 40px 80px rgba(0,0,0,0.25),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+.section--accent .rsvp-note{
+  color: rgba(255,255,255,0.7);
+}
+
+.section--accent .rsvp-success{
+  color: #ffffff;
+}
+
+.section--accent {
+  background-color: var(--color-primary);
+  color: var(--text-inverse);
+  padding: var(--space-xl) var(--space-sm);
+}
+
+.section--accent .section-title,
+.section--accent p,
+.section--accent label,
+.section--accent small {
+  color: #ffffff;
+}
+
+.section--accent .divider {
+  background-color: rgba(255,255,255,0.4);
+}
+
+/* ===============================
+   BOTÓN RSVP – HOVER PREMIUM
+================================ */
+
+.section--accent .rsvp-form button{
+  background-color: #ffffff;
+  color: #2b255f;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.9rem 1.2rem;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.18s ease,
+    box-shadow 0.25s ease;
+}
+
+/* HOVER */
+.section--accent .rsvp-form button:hover{
+  background-color: #d2b24a;
+  color: #1c1f8a;
+
+  transform: translateY(-2px);
+}
+
+/* ACTIVE (CLICK) */
+.section--accent .rsvp-form button:active{
+  transform: translateY(0);
+  box-shadow:
+    0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* FOCUS (TECLADO / ACCESIBILIDAD) */
+.section--accent .rsvp-form button:focus-visible{
+  outline: none;
+  box-shadow:
+    0 0 0 3px rgba(255,255,255,0.8),
+    0 0 0 6px rgba(122,94,203,0.6);
+}
+
+/* =====================================================
+   TICKET RSVP SOBRE FONDO AZUL
+===================================================== */
+
+.section--accent .rsvp-extra{
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.12),
+    rgba(255,255,255,0.06)
+  );
+  backdrop-filter: blur(6px);
+  box-shadow:
+    0 30px 60px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.25);
+}
+
+.section--accent .ticket-body{
+  background: rgba(255,255,255,0.15);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
+}
+
+.section--accent .badge-label{
+  color: rgba(255,255,255,0.8);
+}
+
+.section--accent .badge-value{
+  background: linear-gradient(
+    135deg,
+    #d2b24a,
+    #e8c96a
+  );
+  color: #1c1f8a;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.35);
+}
+
+.section--accent .rsvp-extra::before{
+  opacity: 0.2;
+}
+
+/* =====================================================
+   PASSES (ÚNICO BLOQUE)
+===================================================== */
+
+.section--accent .ticket-badge{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+
+  background: rgba(255,255,255,0.15);
+  padding: 14px 18px;
+  border-radius: 16px;
+
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25);
+}
+
+.section--accent .badge-icon{
+  font-size: 1.2rem;
+}
+
+.section--accent .badge-label{
+  color: rgba(255,255,255,0.85);
+  font-size: 0.75rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.section--accent .badge-value{
+  background: linear-gradient(
+    135deg,
+    #d2b24a,
+    #ecd27a
+  );
+  color: #1c1f8a;
+
+  padding: 6px 14px;
+  border-radius: 999px;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}

@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "pageTitle": "Bautizo de Tamara Sofía"
+  },
+  "site": {
+    "couple": "Tamara Sofía"
+  },
+  "nav": {
+    "left": [
+      {
+        "label": "Inicio",
+        "href": "#hero"
+      },
+      {
+        "label": "Presentación",
+        "href": "#presentation"
+      },
+      {
+        "label": "Ceremonia",
+        "href": "#location"
+      }
+    ],
+    "right": [
+      {
+        "label": "Programa",
+        "href": "#timeline"
+      },
+      {
+        "label": "Regalos",
+        "href": "#gifts"
+      },
+      {
+        "label": "Confirmación",
+        "href": "#rsvp"
+      }
+    ]
+  },
+  "music": {
+    "src": "assets/audio/cancion.mp3",
+    "autoplay": true
+  },
+  "hero": {
+    "pretitle": "Santo Bautismo",
+    "names": "Tamara Sofía",
+    "date": "2026-04-25T12:00:00",
+    "background": "assets/img/hero.png"
+  },
+  "presentation": {
+    "title": "Con la gracia de Dios",
+    "parents": [
+      {
+        "names": [
+          "Flavio Cesar Rodríguez Uvilla",
+          "Andrea Guadalupe Grande Ortiz"
+        ],
+        "note": "Papás"
+      }
+    ],
+    "padrinos": [
+      {
+        "names": [
+          "Alan Giovanni Grande Ortiz",
+          "Angelica Ornelas Orta"
+        ],
+        "note": "Padrinos de Bautizo"
+      }
+    ],
+    "text": "Llenos de fe y amor, presentamos ante Dios a nuestro hija para recibir el Sacramento del Bautismo y te invitamos a acompañarnos en este momento tan especial.",
+    "icon": "assets/img/cruz.svg"
+  },
+  "gratitude": {
+    "title": "Con gratitud",
+    "text": "Agradecemos a Dios y a cada uno de ustedes por acompañarnos en este día tan importante para nuestra familia."
+  },
+  "location": {
+    "title": "Ceremonia y celebración",
+    "subtitle": "Fecha y ubicación",
+    "dateText": "25 · Abril · 2026",
+    "places": [
+      {
+        "title": "Ceremonia Religiosa",
+        "time": "12:00 PM",
+        "image": "assets/img/ceremonia.png",
+        "place": "Parroquia de Cristo Rey",
+        "address": "Av. del Trabajo No. 1, San Andres Atenco, 54040 Tlalnepantla",
+        "map": "https://maps.app.goo.gl/ctEX7fi18wzQDmddA"
+      },
+      {
+        "title": "Celebración",
+        "time": "02:00 PM",
+        "image": "assets/img/recepcion.png",
+        "place": "Salón de Eventos Grupo Vázquez",
+        "address": "Av. del Trabajo No. 1, San Andres Atenco, 54040 Tlalnepantla",
+        "map": "https://maps.app.goo.gl/ctEX7fi18wzQDmddA"
+      }
+    ]
+  },
+  "timeline": {
+    "title": "Programa",
+    "items": [
+      {
+        "time": "12:00 PM",
+        "text": "Celebración del Sacramento del Bautismo",
+        "icon": "assets/img/3.svg"
+      },
+      {
+        "time": "01:00 PM",
+        "text": "Fotografías",
+        "icon": "assets/img/4.svg"
+      },
+      {
+        "time": "02:00 PM",
+        "text": "Recepción",
+        "icon": "assets/img/6.svg"
+      },
+      {
+        "time": "04:00 PM",
+        "text": "Comida",
+        "icon": "assets/img/7.svg"
+      }
+    ]
+  },
+  "dresscode": {
+    "title": "Código de Vestimenta",
+    "type": "Formal",
+    "image": "assets/img/9.svg",
+    "menTitle": "",
+    "womenTitle": "",
+    "men": [],
+    "women": [],
+    "note": "Semiformal"
+  },
+  "gifts": {
+    "title": "Sugerencia de Regalos",
+    "intro": "Lo más importante es compartir este día contigo, pero si deseas obsequiarnos algo, lo recibiremos con mucho cariño.",
+    "options": [
+      {
+        "title": "",
+        "description": "",
+        "type": "link",
+        "url": "",
+        "buttonText": ""
+      },
+      {
+        "title": "",
+        "description": "",
+        "type": "text"
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galería",
+    "type": "images",
+    "items": [
+      "assets/img/gallery/1.jpg",
+      "assets/img/gallery/2.jpg",
+      "assets/img/gallery/3.jpg",
+      "assets/img/gallery/4.jpg",
+      "assets/img/gallery/5.jpg",
+      "assets/img/gallery/6.jpg"
+    ]
+  },
+  "rsvp": {
+    "phone": "525617676227",
+    "title": "Confirmación de Asistencia",
+    "intro": "Nos encantará contar contigo. Por favor confirma tu asistencia.",
+    "fields": {
+      "namePlaceholder": "Nombre completo",
+      "attendancePlaceholder": "¿Podrás acompañarnos?",
+      "attendanceOptions": ["Sí asistiré", "No podré asistir"],
+      "messagePlaceholder": "Mensaje o bendición",
+      "buttonText": "Confirmar por WhatsApp"
+    },
+    "note": "Agradecemos confirmar antes del <strong>10 de abril de 2026</strong>.",
+    "success": "Gracias por confirmar"
+  },
+  "footer": {
+    "names": "Bautizo de Tamara Sofía ",
+    "credits": "Diseñado con amor por Shiny Maker Studio"
+  }
+}
